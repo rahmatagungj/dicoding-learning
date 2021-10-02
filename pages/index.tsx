@@ -4,10 +4,11 @@ import CardCourse from "../components/CardCourse";
 const Home: NextPage = ({ data }: any) => {
   console.log(data);
   return (
-    <div>
+    <div className="container">
+      <div className="row">
       {data &&
         data.map((item: any) => <CardCourse key={item.id} item={item} />)}
-    </div>
+    </div></div>
   );
 };
 
